@@ -1,0 +1,31 @@
+.active
+{
+background-color: white;
+color: black !important;
+}
+#mySidenav a {
+  top: 0px;
+  position: absolute;
+  left: 58px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 200px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenav{
+    display: none;
+}
+
+ #mapview:hover #mySidenav {
+  display: block;
+  left: 0;
+}
+
+#about {
+  top: 20px;
+  background-color: rgba(27, 26, 26, 0.8);
+}

@@ -1,0 +1,23 @@
+.modal-content{
+	border-radius:0;
+	border: 7px solid rgba(0,0,0,0.1);
+}
+.modal-header {
+    padding: 15px;
+}
+
+.width-140-px{
+	width:140px !important;
+	height:40px !important;
+}
+.modal
+{
+background: rgba(0, 0, 0, 0.7);
+}
+.modal-dialog {
+display: inline-block;
+text-align: left;
+vertical-align: middle;
+width: 40%;
+margin: 0px !important;
+}

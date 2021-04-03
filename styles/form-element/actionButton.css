@@ -1,0 +1,107 @@
+.action.dropdown {
+    width: 88px;
+    height: 22px;
+	border:1px solid #C0C0C0;
+	cursor : pointer;
+}
+.padding-5px-2 {
+    padding: 3px 5px;
+}
+.color-action {
+	color : #1792E5;
+	font-size : 12px;
+	line-height : 17px;
+}
+span.action-title {
+    float: left;
+    width: 63px;
+}
+.no-margin {
+	margin:0px;
+}
+.action.dropdown .dropdown-menu{
+	display:none;
+}
+.action.dropdown.open .dropdown-menu {
+    width: 90px;
+    left: -73px;
+    top: 21px;
+    border: 1px solid #1792E5;
+    border-radius: 0px;
+	font-size:12px;
+	display:block;
+}
+.action.dropdown.open {
+    border: 1px solid #1792E5;
+    border-bottom: 0px;
+}
+.action.dropdown i.fa.fa-angle-down, .action.dropdown.open i.fa.fa-angle-right {
+    display: none;
+}
+.action.dropdown i.fa.fa-angle-right, .action.dropdown.open i.fa.fa-angle-down {
+    display: block;
+}
+.action.dropdown .indicator {
+	display:none;
+}
+.action.dropdown.open .indicator{
+	display: block;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    position: absolute;
+    border: 0px;
+    border-bottom: 1px solid #fff;
+    width: 86px;
+    top: 21px;
+    left: 0px;
+    height: 1px;
+    padding: 0px;
+}
+.action.dropdown.open .dropdown-menu>li>a, .action.dropdown.open .dropdown-menu>li>a {
+	font-family: 'HoneywellSansWeb-Bold';
+    width: 160px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.action.dropdown.open .dropdown-menu>li>a:focus, .action.dropdown.open .dropdown-menu>li>a:hover {
+    background: #1792E5;
+    color: #fff !important;
+	width: 160px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-decoration: none;
+}
+.react-grid-Cell:not(.editing):not(.rdg-child-cell):last-child .react-grid-Cell__value {
+	overflow: visible !important;
+    transform: none !important;
+    position: relative;
+    top: 6px;
+    left: 25px;
+}
+
+
+.action.dropdown{
+    /* left:20%; */
+}
+
+@media only screen and (min-width:992px) {
+    .padding-top-45vh {
+         padding-top:calc(100vh - 320px);
+    }
+}
+
+@media only screen and (min-width:992px) {
+    .padding-usermanagement {
+         padding-top:calc(100vh - 620px);
+    }
+}
+span.dropdown-toggle.color-action {float: left;width: 100%;}
+.action.dropdown i.fa.fa-angle-right, .action.dropdown.open i.fa.fa-angle-down {display: block;margin-top: 2px;}
+.action-Overflow{
+    overflow: visible !important;
+    transform: none !important;
+    position: relative;
+}
+.dropdown-toggle::after{
+    display:none;
+}

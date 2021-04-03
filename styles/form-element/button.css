@@ -1,0 +1,18 @@
+.btn {box-shadow: none !important;-webkit-box-shadow:none;text-transform:uppercase;outline:none !important;border:none;}
+.btn.btn-primary.active,.btn.btn-primary.inactive,.btn.btn-secondary.active,
+.btn.btn-secondary.inactive{width:208px;height:50px;color:#fff;border:none;border-radius:0px;}
+.btn.btn-tertiary.active,.btn.btn-tertiary.inactive{width:208px;height:50px}
+.btn.btn-primary.active{background:#1792E5}
+.btn.btn-primary.active:hover{background:#1272B2}
+.btn.btn-primary.inactive,.btn.btn-primary.active:disabled:hover,.btn.btn-primary:disabled{background:#FAFAFA;color:#C0C0C0;}
+.btn.btn-primary.active:active{background:#0A4166}
+.btn.btn-secondary.active{background:#F5F5F5}
+.btn.btn-secondary.active:hover{background:#E0E0E0}
+.btn.btn-secondary.active:active{background:#D0D0D0}
+.btn.btn-secondary.inactive{background:#F5F5F5}
+.btn.btn-tertiary.active{color:#1792E5}
+.btn.btn-tertiary.active:hover{color:#1272B2}
+.btn.btn-tertiary.active:active{color:#0A4166}
+.btn.btn-tertiary.inactive{color:#C0C0C0}
+.width-100-percent{width:100% !important;}
+.addupdateUserButton {position: fixed;bottom: 0px;right: 0px;width: 100%;background: #fff;z-index: 4;}

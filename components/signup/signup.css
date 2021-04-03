@@ -1,0 +1,30 @@
+.fontLogin
+{
+color: #0088cc;
+font-size: 16px;
+font-weight: 600;    
+}
+a:link 
+{
+text-decoration: none;
+}
+.fontLogin:hover
+{
+color: #0088cc;
+}
+.signHeading
+{
+font-weight: 600;     
+}
+.signupmargin
+{
+margin-top: 3.5%;
+}
+.signup label
+{
+ font-size: 14px;;   
+}
+.changepsswordvalidate
+{
+color: red;
+}

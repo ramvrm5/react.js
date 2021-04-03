@@ -1,0 +1,51 @@
+input[type=checkbox].checkbox.active:focus,input[type=checkbox].checkbox.active:focus+label::before,input[type=checkbox].checkbox.inactive:focus{outline:0}
+input[type=checkbox].checkbox.active,input[type=checkbox].checkbox.inactive{display:none}
+input[type=checkbox].checkbox.active~label.checkbox.label{color:#303030;font-size:13px;line-height:17px;float:left;margin:0;cursor:pointer}
+input[type=checkbox].checkbox.inactive~label.checkbox.label{color:silver;font-size:13px;line-height:17px;float:left;margin:0}
+input[type=checkbox].checkbox.active+label:before{border:1px solid #707070}
+input[type=checkbox].checkbox.inactive+label:before{border:1px solid #F0F0F0}
+input[type=checkbox].checkbox.active+label:before,input[type=checkbox].checkbox.inactive+label:before{content:"\00a0";display:inline-block;margin:0 9px 0 0;width:16px;height:16px;color:#303030;font-size:13px;line-height:17px;float:left;cursor:pointer}
+input[type=checkbox].checkbox.active:checked+label:before{content:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAICAYAAAAvOAWIAAAAAXNSR0IArs4c6QAAAIlJREFUGBmFy70JwkAYBuBcYiNiJRbWzuAKNu7gHi7iAkHQShBrOxtLW7EOVo5wPgnkQIl68HDfz/tl2Z8XYxxxYpL/ygr07Q/cQwjV16xgzp4jRRNUzBl+XpmtuTBIO82GM+lAveLGOAXrwqDHjubAv+TB9C3YNhYFW648mbW7zl+gPihZdAYMXya9dYri315BAAAAAElFTkSuQmCC) !important;text-align:center;padding-left: 1px;}
+/* input[type=checkbox].checkbox.active:not(:checked)+label:before{content:'';text-align:center;padding-left: 1px;} */
+input[type=checkbox].checkbox.active:not(:checked)+label.emptyDisable:before {
+    content: "";
+    text-align: center;
+    padding-left: 1px;
+    background-color: #d0d0d0 !important;
+    border-color: #d0d0d0 !important;
+    cursor: no-drop;
+}
+/* input[type=checkbox].checkbox.active+label:hover:before, */
+input[type=checkbox].checkbox.active:checked+label:before{background:#1792E5;color:#fff;border:1px solid #1792E5;padding-top:3px;}
+
+/* FOR GRID CHECK BOX */
+.radio-custom+.radio-custom-label:before, .react-grid-checkbox+.react-grid-checkbox-label:before {
+    content: "" !important;
+    background: #fff;
+    border: 1px solid #707070 !important;
+    display: inline-block !important;
+    vertical-align: middle !important;
+    width: 16px !important;
+    height: 16px !important;
+    text-align: center !important;
+    line-height:15px;
+    margin:0 9px 0 0;
+}
+ .react-grid-checkbox:checked+.react-grid-checkbox-label:before {
+    box-shadow: none !important;
+    background: #1792E5 !important;
+    color: #fff !important;
+    border: 1px solid #1792E5 !important;
+    content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAICAYAAAAvOAWIAAAAAXNSR0IArs4c6QAAAIlJREFUGBmFy70JwkAYBuBcYiNiJRbWzuAKNu7gHi7iAkHQShBrOxtLW7EOVo5wPgnkQIl68HDfz/tl2Z8XYxxxYpL/ygr07Q/cQwjV16xgzp4jRRNUzBl+XpmtuTBIO82GM+lAveLGOAXrwqDHjubAv+TB9C3YNhYFW648mbW7zl+gPihZdAYMXya9dYri315BAAAAAElFTkSuQmCC) !important;
+    text-align: center  !important;
+    padding-left: 1px !important;
+    padding-top:3px;
+}
+.outline-checkbox{
+    outline: none !important;
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .checkbox-position {
+    position: absolute !important;
+    } 
+}

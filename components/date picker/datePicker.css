@@ -1,0 +1,26 @@
+.labelClass
+{
+top:-13px;
+background-color:white;
+opacity:1;
+font-size: 88%;
+}
+.react-datepicker__input-container input[type="text"]:focus 
+{
+border: 1px solid #1892e5 !important;
+outline: 0 !important;
+box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6) !important;
+background: url(/images/cal-blue.png) no-repeat scroll right;
+background-position:relative; 
+}
+.react-datepicker__input-container input[type="text"]
+{
+height: 37px !important;  
+border: 1px solid #cccccc !important;
+cursor: pointer !important;
+}
+.img
+{
+background: url(/images/cal-gray.png) no-repeat scroll right; 
+background-position:relative;   
+}

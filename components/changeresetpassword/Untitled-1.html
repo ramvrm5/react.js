@@ -1,0 +1,316 @@
+<div id="create_ruleset_popup">
+    <div class="back_button_div"><button id="popup_create_button" onclick="create_ruleset('update')" style="float: left;;margin-right:20px">Save</button><button
+            id="popup_create_button" onclick="cancel_rule()" style="float: left;">Cancel</button></div>
+    <div style="width: 83%;margin: 0 auto;">
+        <ul style="list-style:none;padding:0" class="popup_ul">
+            <li>
+                <div style="float:left;width:100%">
+                    <div class="inner_li_left" style="float:left;"><span>Name</span><input type="text" value="Test1" id="ruleset_name"
+                            class="popup_text_boxs" disabled="disabled" style="float:none; margin-right:20px !important">
+                        <div class="chbx_div"><input type="checkbox" value="RSS_ACTIVE" checked="checked" id="ruleset_status">
+                            <span class="active_chkbx">Active</span></div><input type="hidden" value="Test1" id="ruleset_name">
+                    </div>
+                </div>
+            </li>
+            <div id="add_more_rule_0" style="float:left,;width:100%"><span class="line_seprator"></span>
+                <li style="background-color:#eeeeee !important;float:left;width:100%;border-radius:5px;padding:5px 5px !important">
+                    <div class="popup_module_head"> Rule<span onclick="add_more_attributes_rule(0)" class="plain_text_button"
+                            style="float:right;cursor: pointer;">Add More Rule</span></div>
+                </li>
+                <li>
+                    <div class="popup_module_head" style="float:left;width:100%;margin-bottom:5px">Select Attributes</div>
+                </li>
+                <li>
+                    <center style="float:left;width:100%">
+                        <div id="popup_div_more0" style=" float: left; width: 100%; margin-bottom: 5px; "><select
+                                onChange="append_attb_drop_box(0,0, this.value)" class="popup_db_1 attr_name_0" id="drop_box_sel0_0">
+                                <option value="1">Product Name</option>
+                                <option value="2">Site Name</option>
+                                <option value="3">Zone Name</option>
+                                <option value="4">Instrument Alarm Type</option>
+                                <option value="5">Alarms Count</option>
+                                <option value="6" selected="selected">Sensor Reading</option>
+                                <option value="7">Sensor Alarm Type</option>
+                            </select>
+                            <div id="drop_box_cnt0" class="popup_db_2"></div>
+                            <div id="text_box_cnt0" class="popup_tb"><select id="rel_op0_0" onchange="change_compare_type(0,0)"
+                                    style="margin-right:12px">
+                                    <option value="1" selected="selected">Equal To</option>
+                                    <option value="2">Range</option>
+                                    <option value="GREATER">Greater Than</option>
+                                    <option value="LESS">Less Than</option>
+                                </select>
+                                <script type="text/javascript">document.getElementById("rel_op0_0").disabled = true;</script><select
+                                    id="product_list_0_0" name="product" onfocus="remove_textbox_error('product_list_0_0')"
+                                    onkeydown="remove_textbox_error('product_list_0_0')" onchange="add_description();">
+                                    <option value="AP4C">AP4C</option>
+                                    <option value="APD-2000">APD-2000</option>
+                                    <option value="ATEX MiniRAE Lite">ATEX MiniRAE Lite</option>
+                                    <option value="AreaPAD">AreaPAD</option>
+                                    <option value="AreaPORT">AreaPORT</option>
+                                    <option value="AreaRAE">AreaRAE</option>
+                                    <option value="AreaRAE 2 Battery Board">AreaRAE 2 Battery Board</option>
+                                    <option value="AreaRAE 2 IAQ">AreaRAE 2 IAQ</option>
+                                    <option value="AreaRAE 2 IAQ Sensor">AreaRAE 2 IAQ Sensor</option>
+                                    <option value="AreaRAE Gamma">AreaRAE Gamma</option>
+                                    <option value="AreaRAE Gamma GPS">AreaRAE Gamma GPS</option>
+                                    <option value="AreaRAE Gamma Steel">AreaRAE Gamma Steel</option>
+                                    <option value="AreaRAE Gamma Steel GPS">AreaRAE Gamma Steel GPS</option>
+                                    <option value="AreaRAE IAQ">AreaRAE IAQ</option>
+                                    <option value="AreaRAE Plus">AreaRAE Plus</option>
+                                    <option value="AreaRAE Pro">AreaRAE Pro</option>
+                                    <option value="AreaRAE Steel">AreaRAE Steel</option>
+                                    <option value="AreaRAE+RF/GPS">AreaRAE+RF/GPS</option>
+                                    <option value="AutoRAE 2 Controller">AutoRAE 2 Controller</option>
+                                    <option value="AutoRAE II LT">AutoRAE II LT</option>
+                                    <option value="BW Clip">BW Clip</option>
+                                    <option value="Bioharness">Bioharness</option>
+                                    <option value="CDRAE">CDRAE</option>
+                                    <option value="ChemRAE">ChemRAE</option>
+                                    <option value="ChemSentry">ChemSentry</option>
+                                    <option value="DoseRAE 2">DoseRAE 2</option>
+                                    <option value="DoseRAE 2 Adaptor">DoseRAE 2 Adaptor</option>
+                                    <option value="DoseRAE Pro">DoseRAE Pro</option>
+                                    <option value="DoseRAE Pro Adaptor">DoseRAE Pro Adaptor</option>
+                                    <option value="DustTrak">DustTrak</option>
+                                    <option value="EntryRAE">EntryRAE</option>
+                                    <option value="FMC-1000+ Channel Card">FMC-1000+ Channel Card</option>
+                                    <option value="FMC-1000+ Controller">FMC-1000+ Controller</option>
+                                    <option value="FMC-60">FMC-60</option>
+                                    <option value="FMC400 Survey Tool">FMC400 Survey Tool</option>
+                                    <option value="GCRAE">GCRAE</option>
+                                    <option value="GammaRAE II">GammaRAE II</option>
+                                    <option value="GammaRAE II R">GammaRAE II R</option>
+                                    <option value="GammaRAE II R Rechargable">GammaRAE II R Rechargable</option>
+                                    <option value="GasAlertMicroClip">GasAlertMicroClip</option>
+                                    <option value="LAM">LAM</option>
+                                    <option value="MaxXT">MaxXT</option>
+                                    <option value="MeshGuard">MeshGuard</option>
+                                    <option value="MicroRAE">MicroRAE</option>
+                                    <option value="Mini Wireless Controller">Mini Wireless Controller</option>
+                                    <option value="Mini Wireless Pager">Mini Wireless Pager</option>
+                                    <option value="Mini Wireless Router">Mini Wireless Router</option>
+                                    <option value="MiniRAE 2000">MiniRAE 2000</option>
+                                    <option value="MiniRAE 3000">MiniRAE 3000</option>
+                                    <option value="MiniRAE Lite">MiniRAE Lite</option>
+                                    <option value="Multi-channel Controller(Channel)">Multi-channel Controller(Channel)</option>
+                                    <option value="Multi-channel Controller(Master)">Multi-channel Controller(Master)</option>
+                                    <option value="MultiRAE">MultiRAE</option>
+                                    <option value="MultiRAE (Diffusion) Cradle">MultiRAE (Diffusion) Cradle</option>
+                                    <option value="MultiRAE (Pumped) Cradle">MultiRAE (Pumped) Cradle</option>
+                                    <option value="MultiRAE Eco">MultiRAE Eco</option>
+                                    <option value="MultiRAE Eco Sensor">MultiRAE Eco Sensor</option>
+                                    <option value="MultiRAE IAQ">MultiRAE IAQ</option>
+                                    <option value="MultiRAE IAQ Sensor">MultiRAE IAQ Sensor</option>
+                                    <option value="MultiRAE IR">MultiRAE IR</option>
+                                    <option value="MultiRAE Lite">MultiRAE Lite</option>
+                                    <option value="MultiRAE Lite Sensor">MultiRAE Lite Sensor</option>
+                                    <option value="MultiRAE MX">MultiRAE MX</option>
+                                    <option value="MultiRAE MX Sensor">MultiRAE MX Sensor</option>
+                                    <option value="MultiRAE Pro">MultiRAE Pro</option>
+                                    <option value="MultiRAE Pro Sensor">MultiRAE Pro Sensor</option>
+                                    <option value="MultiRAE Sensor">MultiRAE Sensor</option>
+                                    <option value="MultiRAE WTK">MultiRAE WTK</option>
+                                    <option value="NeutronRAE II">NeutronRAE II</option>
+                                    <option value="Protege">Protege</option>
+                                    <option value="QRAE">QRAE</option>
+                                    <option value="QRAE+">QRAE+</option>
+                                    <option value="QRAE-II">QRAE-II</option>
+                                    <option value="QRAE3">QRAE3</option>
+                                    <option value="QRAE3 Cradle">QRAE3 Cradle</option>
+                                    <option value="RAEAlert EC">RAEAlert EC</option>
+                                    <option value="RAEAlert LEL">RAEAlert LEL</option>
+                                    <option value="RAEAlert NDIR">RAEAlert NDIR</option>
+                                    <option value="RAEGuard EC">RAEGuard EC</option>
+                                    <option value="RAEGuard LEL">RAEGuard LEL</option>
+                                    <option value="RAEGuard NDIR">RAEGuard NDIR</option>
+                                    <option value="RAEGuard2 PID">RAEGuard2 PID</option>
+                                    <option value="RAELink3">RAELink3</option>
+                                    <option value="RAEPoint Router">RAEPoint Router</option>
+                                    <option value="RAEPoint Switch Host">RAEPoint Switch Host</option>
+                                    <option value="RAEPoint Switch Remote">RAEPoint Switch Remote</option>
+                                    <option value="RAEPort">RAEPort</option>
+                                    <option value="RAETag">RAETag</option>
+                                    <option value="RAEWatch">RAEWatch</option>
+                                    <option value="SP-3200">SP-3200</option>
+                                    <option value="SP1003+">SP1003+</option>
+                                    <option value="SP1104(KLH)">SP1104(KLH)</option>
+                                    <option value="SP2102+">SP2102+</option>
+                                    <option value="SP3104+">SP3104+</option>
+                                    <option value="STC-103">STC-103</option>
+                                    <option value="SearchRAE">SearchRAE</option>
+                                    <option value="SentryRAE">SentryRAE</option>
+                                    <option value="ToxiRAE III">ToxiRAE III</option>
+                                    <option value="ToxiRAE LEL">ToxiRAE LEL</option>
+                                    <option value="ToxiRAE PID">ToxiRAE PID</option>
+                                    <option value="ToxiRAE Pro">ToxiRAE Pro</option>
+                                    <option value="ToxiRAE Pro CO2">ToxiRAE Pro CO2</option>
+                                    <option value="ToxiRAE Pro Cradle">ToxiRAE Pro Cradle</option>
+                                    <option value="ToxiRAE Pro IR">ToxiRAE Pro IR</option>
+                                    <option value="ToxiRAE Pro LEL">ToxiRAE Pro LEL</option>
+                                    <option value="ToxiRAE Pro PID">ToxiRAE Pro PID</option>
+                                    <option value="USB Dev Kit">USB Dev Kit</option>
+                                    <option value="UltraRAE">UltraRAE</option>
+                                    <option value="UltraRAE 3000">UltraRAE 3000</option>
+                                    <option value="VRAE">VRAE</option>
+                                    <option value="WeatherPak">WeatherPak</option>
+                                    <option value="Wireless Controller">Wireless Controller</option>
+                                    <option value="Wireless control Relay Device">Wireless control Relay Device</option>
+                                    <option value="miniDose">miniDose</option>
+                                    <option value="ppbRAE">ppbRAE</option>
+                                </select><select id="site_list_0_0" style="display:none" name="site" onfocus="remove_textbox_error('site_list')"
+                                    onkeydown="remove_textbox_error('site_list')" onchange="add_description();">
+                                    <option value="1127">im1</option>
+                                    <option value="1125">Itss</option>
+                                    <option value="137">retgg</option>
+                                    <option value="1128">'rte'</option>
+                                    <option value="1126">ste1</option>
+                                </select><select id="zone_list_0_0" style="display:none" name="zone" onfocus="remove_textbox_error('zone_list')"
+                                    onkeydown="remove_textbox_error('zone_list')" onchange="add_description();">
+                                    <option value="">No zone found</option>
+                                </select><select id="inst_alarm_type0_0" style="display:none" onchange="add_description();">
+                                    <option value="3">Fault</option>
+                                    <option value="4">Alarm</option>
+                                </select><select id="sensor_name_0_0" style="margin-right:10px" onchange="add_description();">
+                                    <option value="10.6eV_PID">10.6eV_PID</option>
+                                    <option value="3D">3D</option>
+                                    <option value="Activity">Activity</option>
+                                    <option value="Bar">Bar</option>
+                                    <option value="Blister">Blister</option>
+                                    <option value="Blood">Blood</option>
+                                    <option value="BLST">BLST</option>
+                                    <option value="Breath">Breath</option>
+                                    <option value="C2H3CL">C2H3CL</option>
+                                    <option value="C2H4O">C2H4O</option>
+                                    <option value="C3H8">C3H8</option>
+                                    <option value="CH2CHCN">CH2CHCN</option>
+                                    <option value="CH3SH">CH3SH</option>
+                                    <option value="CH4">CH4</option>
+                                    <option value="Chem_Haz">Chem_Haz</option>
+                                    <option value="CIO2">CIO2</option>
+                                    <option value="CL2">CL2</option>
+                                    <option value="CO">CO</option>
+                                    <option value="CO(32)">CO(32)</option>
+                                    <option value="CO2">CO2</option>
+                                    <option value="CO500">CO500</option>
+                                    <option value="Conf_Ck">Conf_Ck</option>
+                                    <option value="Dir">Dir</option>
+                                    <option value="Dout">Dout</option>
+                                    <option value="ETO">ETO</option>
+                                    <option value="ETO-A">ETO-A</option>
+                                    <option value="ETO-C">ETO-C</option>
+                                    <option value="Gamma">Gamma</option>
+                                    <option value="H2">H2</option>
+                                    <option value="H2S">H2S</option>
+                                    <option value="H2S1000">H2S1000</option>
+                                    <option value="HCI">HCI</option>
+                                    <option value="HCN">HCN</option>
+                                    <option value="Heart">Heart</option>
+                                    <option value="HF">HF</option>
+                                    <option value="HT">HT</option>
+                                    <option value="Inter">Inter</option>
+                                    <option value="IRRT">IRRT</option>
+                                    <option value="LEL">LEL</option>
+                                    <option value="mA">mA</option>
+                                    <option value="Mass_Conc">Mass_Conc</option>
+                                    <option value="MOS_LEL">MOS_LEL</option>
+                                    <option value="Motion">Motion</option>
+                                    <option value="NERV">NERV</option>
+                                    <option value="Nerve">Nerve</option>
+                                    <option value="Neutrone">Neutrone</option>
+                                    <option value="NH3">NH3</option>
+                                    <option value="NO">NO</option>
+                                    <option value="NO2">NO2</option>
+                                    <option value="O2">O2</option>
+                                    <option value="PH3">PH3</option>
+                                    <option value="Posture">Posture</option>
+                                    <option value="Skin_Temp">Skin_Temp</option>
+                                    <option value="SO2">SO2</option>
+                                    <option value="Solar">Solar</option>
+                                    <option value="SPE">SPE</option>
+                                    <option value="Speed">Speed</option>
+                                    <option value="Temp">Temp</option>
+                                    <option value="Toxic">Toxic</option>
+                                    <option value="V">V</option>
+                                    <option value="VOC">VOC</option>
+                                    <option value="VOC/PID">VOC/PID</option>
+                                    <option value="VOL/TC">VOL/TC</option>
+                                    <option value="VX">VX</option>
+                                </select><select id="sensor_alarm_type0_0" style="display:none" onchange="add_description();">
+                                    <option value="0">Normal</option>
+                                    <option value="1">Calibration</option>
+                                    <option value="2">Calibration due</option>
+                                    <option value="3">Bump</option>
+                                    <option value="4">Bump due</option>
+                                    <option value="32">Lamp</option>
+                                    <option value="33">Off</option>
+                                    <option value="63">Fail</option>
+                                    <option value="64">Max</option>
+                                    <option value="65">Over</option>
+                                    <option value="66">Hi High</option>
+                                    <option value="67">High</option>
+                                    <option value="68">Low</option>
+                                    <option value="69">Lo Low</option>
+                                    <option value="70">STEL</option>
+                                    <option value="71">TWA</option>
+                                    <option value="72">Neg</option>
+                                    <option value="73">Dose</option>
+                                    <option value="95">Alarm</option>
+                                </select><select id="unit_name_0_0" style="margin-right:10px" onchange="add_description();">
+                                    <option value="per">%</option>
+                                    <option value="Bth/m">Bth/m</option>
+                                    <option value="Bts/m">Bts/m</option>
+                                    <option value="CPS">CPS</option>
+                                    <option value="Deg">Deg</option>
+                                    <option value="DegC">DegC</option>
+                                    <option value="DegF">DegF</option>
+                                    <option value="InvallD">InvallD</option>
+                                    <option value="Kcps">Kcps</option>
+                                    <option value="m/sec">m/sec</option>
+                                    <option value="mA">mA</option>
+                                    <option value="mBar">mBar</option>
+                                    <option value="mcps">mcps</option>
+                                    <option value="mg">mg</option>
+                                    <option value="mg/m(caret)3">mg/m^3</option>
+                                    <option value="mR/h">mR/h</option>
+                                    <option value="mR">mR</option>
+                                    <option value="mrem">mrem</option>
+                                    <option value="Mrem/h">Mrem/h</option>
+                                    <option value="mSv">mSv</option>
+                                    <option value="mSv/h">mSv/h</option>
+                                    <option value="ppb">ppb</option>
+                                    <option value="ppm">ppm</option>
+                                    <option value="R">R</option>
+                                    <option value="R/h">R/h</option>
+                                    <option value="rem">rem</option>
+                                    <option value="rem/h">rem/h</option>
+                                    <option value="Sv">Sv</option>
+                                    <option value="Sv/h">Sv/h</option>
+                                    <option value="ug">ug</option>
+                                    <option value="ug/m(caret)3">ug/m^3</option>
+                                    <option value="uR">uR</option>
+                                    <option value="uR/h">uR/h</option>
+                                    <option value="urem">urem</option>
+                                    <option value="Urem/h">Urem/h</option>
+                                    <option value="uSv">uSv</option>
+                                    <option value="uSv/h">uSv/h</option>
+                                    <option value="V">V</option>
+                                    <option value="W/m2">W/m2</option>
+                                    <option value="g">g</option>
+                                    <option value="bpm">bpm</option>
+                                    <option value="undefined">%LEL</option>
+                                </select><input type="text" id="rule_text_box_0_0" value="" style="display:none; margin-top: 0;"
+                                    onkeyup="add_description();" onfocus="remove_textbox_error('rule_text_box_0_0')"
+                                    onkeydown="remove_textbox_error('rule_text_box_0_0')" maxlength="10" ; /><span id="minmax0_0"
+                                    style="display:inline">Min <input type="text" id="min0_0" value="26" onkeyup="add_description();"
+                                        onfocus="remove_textbox_error('min0_0')" onkeydown="remove_textbox_error('min0_0')"
+                                        maxlength="5" ; />Max <input type="text" id="max0_0" value="undefined" onkeyup="add_description();"
+                                        onfocus="remove_textbox_error('max0_0')" onkeydown="remove_textbox_error('max0_0')"
+                                        maxlength="5" ; /></span>
+                                <script type="text/javascript">document.getElementById("rel_op0_0").disabled = false;</script>
+                            </div>
+                        </div>
+                        <div id="more_attb_container_0"><img src="../../images/add.png" alt="Add More" title="Add more attributes"
+                                id="add_notify_img_0_0" style="cursor: pointer;float:right;display:none" onClick="add_more_attributes(0,1)" /><img
+                                src="../../images/remove.png" alt="Add More" title="Remove attributes" id="remove_notify_img_0_0"
+                                style="cursor: pointer;float:right;margin-right:3px;display:none" onClick="remove_more_attr(0,0,0)" />

@@ -1,0 +1,23 @@
+/***Working On it***/
+.form-group {
+	position: relative;
+	padding-top: 10px;
+}
+.floating-label {
+    position: absolute;
+    pointer-events: none;
+    left: 10px;
+    top: 20px;
+    transition: 0.2s ease all;
+    font-weight: normal;
+	background: #fff;
+	color: #666666;
+	font-size: 13px;
+	line-height: 16px;
+}
+select:focus ~ .floating-label, select:not(:focus):valid ~ .floating-label {
+    top: 0px;
+    background: #fff;
+    padding: 0px 5px;
+    left: 8px;
+}

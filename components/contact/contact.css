@@ -1,0 +1,15 @@
+.contactHeight
+{
+height:372px; 
+}
+.btnclass
+{
+font-size:14px !important;
+font-weight:800 !important;
+background-color: rgba(255, 255, 255, 0)!important;
+color:#1792E5 !important;   
+}
+.priv  .contactLink 
+{
+color: grey;
+} 

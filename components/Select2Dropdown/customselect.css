@@ -1,0 +1,29 @@
+.labelselect
+{
+position: absolute;
+left: 28px;
+top: 5px;
+padding: 2px 0 0 3px;
+transition: all 200ms;
+opacity: 0.5;
+}
+.css-2o5izw
+{
+border-color: #66afe9 !important;   
+outline: 0 !important;
+box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6) !important;
+}
+.css-2o5izw:hover
+{
+border-color: #66afe9 !important;
+outline: 0 !important;
+box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6) !important;
+}
+.css-1dembt6
+{
+height: 170px !important;    
+}
+.css-11unzgr
+{
+    max-height: 164px !important;
+}

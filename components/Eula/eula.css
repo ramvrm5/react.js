@@ -1,0 +1,18 @@
+.checkmarkCustom
+{
+color: #b3b3b3;
+font-weight: 500;
+cursor:not-allowed;
+}
+.checkboxcustom
+{
+border: 1px solid #e0dddd;
+}
+.eulamargin
+{
+ margin-top:7.5%;   
+}
+.eulaContentHeight
+{
+height:372px;    
+}

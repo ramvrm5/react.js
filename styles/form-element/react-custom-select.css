@@ -1,0 +1,120 @@
+/* FOR SELECT */
+
+.floating-label {
+    font-size: 13px;
+    line-height: 13px;
+}
+
+.Select-placeholder {
+    display: none;
+}
+.sidebar-element-top .Select-placeholder {
+    display: block;
+}
+
+.organizationdrpdwn .Select-placeholder {
+    display: block;
+}
+
+.Select.Select--multi.is-focused.is-open ~ label.floating-label.HoneywellSansWeb-Book, .Select.Select--multi.has-value ~ label.floating-label.HoneywellSansWeb-Book, .Select.Select--single.is-focused.is-open ~ label.floating-label.HoneywellSansWeb-Book, .Select.Select--single.has-value ~ label.floating-label.HoneywellSansWeb-Book {
+    top: 3px;
+}
+/* .selectDrop .css-10nd86i ~ label.floating-label.HoneywellSansWeb-Book {
+    top: 3px;
+} */
+.Select.Select--multi.is-focused.is-open .Select-control, .Select.Select--single.is-focused.is-open .Select-control {
+	border: 1px solid #1792E5;
+    border-bottom: 0;
+	outline:none;
+}
+.Select.Select--multi.is-focused.is-open .Select-menu-outer , .Select.Select--single.is-focused.is-open .Select-menu-outer {
+    border: 1px solid #1792E5;
+    border-top: 0;
+    border-radius: 0;
+}
+.Select--multi .Select-value .Select-value-label {
+    background-color: #D1E9FA!important;
+    border: 1px solid #D1E9FA!important;
+    font-family: HoneywellSansWeb-Bold;
+	color: #1272B2!important;
+}
+.Select--multi .Select-value .Select-value-icon {
+	background-color: #D1E9FA!important;
+	color: #1272B2!important;
+}
+.Select-menu-outer .Select-menu {
+	background: #F5F5F5 !important;
+    font-family: HoneywellSansWeb-Bold;
+}
+.Select-menu-outer .Select-menu:hover, .Select-menu-outer .Select-menu:focus {
+	background-color: #5897fb !important;
+    color: #fff !important;
+}
+.Select.is-focused, .is-focused:not(.is-open) > .Select-control {
+	outline:none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border-color:#1792E5;
+}
+.Select-menu-outer {
+    background: transparent;
+    float: left;
+    width: 99.999%;
+}
+.Select-menu {
+    float: left;
+    width: 100%;
+    background: transparent;
+}
+.Select-option {
+    float: left;
+    width: 100%;
+    background: #F5F5F5;
+    font-family: HoneywellSansWeb-Bold;
+	padding: 6px;
+    user-select: none;
+    -webkit-user-select: none;
+	cursor: pointer;
+}
+.Select-option.is-focused {
+	background-color: #5897fb;
+    color: white;
+}
+.Select-option.is-selected {
+    display: none;
+}
+.sidebar-element-form-input .Select.is-focused ~ .floating-label,
+.sidebar-element-form-input .Select.has-value ~ label.floating-label.HoneywellSansWeb-Book,
+.sidebar-element-form-input .Select.isOpen ~ label.floating-label.HoneywellSansWeb-Book,
+.sidebar-element-form-input .Select.is-focused.is-open.is-pseudo-focused.is-searchable.has-value ~ .floating-label
+{top: -2px;background: transparent;color: #fff;}
+
+.Select.is-focused.is-open .Select-menu-outer {
+    z-index: 4;
+}
+@media screen and (min-width: 319px) and (max-width:414px) {
+.floating-label{
+    font-size: 10px;
+}
+}
+.Select-input{
+    height: 36px;
+}
+.css-10nd86i .css-xwjg1b {
+    background-color: #d1e9fa;
+    color: #1272b2!important;
+    font-family: HoneywellSansWeb-Bold;
+    border: 1px solid rgba(0,126,255,.24);
+}
+.css-10nd86i .css-10odw4q {
+    color: #1272b2 !important;
+    font-family: HoneywellSansWeb-Bold;
+}
+.css-1aya2g8 {
+    background: #fff;
+}
+.css-2o5izw:focus, .css-2o5izw:hover{
+    outline: none !important;
+    box-shadow: none;
+    border-color: #1792e5;
+}
